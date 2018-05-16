@@ -4,77 +4,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Title </title>
         <link rel="stylesheet" type="text/css" href="layout/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="layout/css/fontawesome-all.min.css"/>
         <link rel="stylesheet" type="text/css" href="layout/css/project.css"/>
+        <link rel="stylesheet" type="text/css" href="layout/css/backend.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/scss" href="layout/css/style.scss">
+       <link rel="icon" href="logoedit.png" type="image/x-icon">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/vendor/bootstrap/css/bootstrap.min.css">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/fonts/iconic/css/material-design-iconic-font.min.css">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/vendor/animate/animate.css">
+       <!--===============================================================================================-->	
+         <link rel="stylesheet" type="text/css" href="layout/vendor/css-hamburgers/hamburgers.min.css">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/vendor/animsition/css/animsition.min.css">
+       <!--===============================================================================================-->
+         <link rel="stylesheet" type="text/css" href="layout/vendor/select2/select2.min.css">
+       <!--===============================================================================================-->	
+         <link rel="stylesheet" type="text/css" href="layout/vendor/daterangepicker/daterangepicker.css">
+       <!--===============================================================================================-->
+       <link rel="stylesheet" type="text/css" href="layout/css/util.css">
+           <link rel="stylesheet" type="text/css" href="layout/css/main.css">
       
 
 
     </head>
     <body>             
             <div class="projects">
-           <a data-toggle="modal"  data-target="#create-project">
+           <div id="display-modal">
            <div class="new-project-icon">
-            <div>Create Project</div>
+            <div id="plus-icon"></div>
+            <h5 style="margin: 55px; margin-left:10px; ">Create Project</h1>
+
            </div> 
-        </a> 
+        </div> 
     </div>
+
+
+    
+<div id="id01" class="modal">
+ 
+    <div class="modal-content animate">
+
+        <div class="wrap-login100">
+
+            <div class="loginp100-form validate-form">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" >&times;</span>
+
+              <span class="login100-form-title p-b-26">
+                Create Project
+              </span>
+         
+              <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                <input class="input100" type="text"  id="InputProject">
+                <span class="focus-input100" data-placeholder="Project Name"></span>
+              </div>
+    
+             
+    
+              <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                  <div class="login100-form-bgbtn"></div>
+                  <button class="login100-form-btn create-project">
+                    Create
+                  </button>
+                </div>
+              </div>
+    
+             
+            </div>
+          </div>
+          
+
+</div>
+</div>
+
 
            
         
-        <!-- Create project modal -->
-        <!-- Trigger the modal with a button -->
-
-        <!-- Modal -->
-            <div id="create-project" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-        <!-- Modal content-->
-            <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Create Project</h4>
-            <br><br>
-            <div class="modal-body">
-            <div class="form-group">
-            <label for="InputProject">Project Name:</label>
-            <input type="text" class="form-control" id="InputProject"  placeholder="Enter your project name" name="Project-name" required>
-            </div>
-            </div>
-            <center>
-            <input type="button" class="btn btn-default create-modal" data-dismiss="modal" value="Close">
-            <input type="button" class="btn btn-default create-project create-modal"  value="Create" >
-        </center>    
-        </div>
-            </div>
-         </div>
+    
          <input type="button" class="btn btn-default"  value="Sign-out" id="signoutbtn">
 
 
      
 
-                      
-        
-
-        
-
-
-
-      
-        
            
-                  
-                    
+  <!--firebase configuration -->
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="layout/js/jquery-3.3.1.min.js"></script>
+<script src="layout/js/popper.min.js"></script>
+<script src="layout/js/bootstrap.min.js"></script>
+
+<script src="firebase/project.js" type="module"></script>
+   
+  
+            
 
 
+<!--===============================================================================================-->
+	<script src="layout/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="layout/vendor/bootstrap/js/popper.js"></script>
+	<script src="layout/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="layout/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="layout/vendor/daterangepicker/moment.min.js"></script>
+	<script src="layout/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="layout/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
 
-
-
-
-                <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-                <script src="layout/js/jquery-3.3.1.min.js"></script>
-                <script src="layout/js/popper.min.js"></script>
-                <script src="layout/js/bootstrap.min.js"></script>
-                <script src="layout/js/backend.js"></script>
-                <script src="firebase/project.js" type="module"></script>  
-      
     
             </body>
         </html>

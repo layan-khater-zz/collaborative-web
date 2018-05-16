@@ -1,13 +1,38 @@
 
 #signoutbtn{
+    position: fixed;
     margin:10px; 
-    background-color: #2881e3;
+    background-color: #21d4fd;
     color:white;
     float: right;
+    font-size: 15px;
+    left: 90%;
+    top:10px;
 
 }
 
+#plus-icon {
+    background: #21d4fd;
+    height: 30px;
+    position: relative;
+    width: 5px;
+    left: 79px;
+    top: 27px;
+    border-radius: 10px;
+    
 
+  }
+  #plus-icon:after {
+    background: #21d4fd;
+    content: "";
+    height: 5px;
+    left: -12px;
+    position: absolute;
+    top: 12px;
+    width: 30px;
+    border-radius: 10px;
+
+  }
 
 .new-project-icon{
     float: left;    
@@ -21,15 +46,12 @@
     padding:10px 10px 5px 10px;
     margin: 50px 10px 100px 50px;
     font-weight: bold; 
-    color:#2881e3;
+    color:#21d4fd;
     font-size: 20px;
     
     
     }
-    .fa-plus{
-        color: #2881e3;
-        padding: 20;
-    }
+   
     
    
     .new-project-icon:hover{
@@ -59,44 +81,44 @@
         
         }
         
-        .project>div{
+        .project>h1{
             box-sizing: border-box;
             position: relative;
-            color:#2881e3;
+            color:#21d4fd;
             font-size: 27px;
             cursor: hand;
+            top:0.3em;
         }
         
         .project:hover{
             background-color:#f2f2f2;
         
+    
         }
 
-        
+        .wrap-login100 {
+height: 400px;}
 
- h4.modal-title{
-    text-align: center;
-    font-size: 25px;
+.container-login100-form-btn{
+    position: relative;
+    top:20px;
 }
-
-div.modal-body>div.form-group>label{
-    font-size:17px;
-}
-
-input.create-modal{
-    float: right;
-    margin:10 5 10 5;
-    background-color: #2881e3;
-    color: white;
-    width: 100px;
-    display: block;
-}
-div.form-group{
-    margin: 0 0 40px;
-    
-}
-div.modal-content{
-    color: #2881e3;
-   
+.login100-form-title{
+    position: relative;
+    font-weight: 10px;
+    top:-30px;
+    color:#21d4fd;
 }
 
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  

@@ -1,9 +1,9 @@
 
 /* add diagram */
 
-.btn-primary{
+.btn{
     margin: 10px;
-    background-color: #2881e3;
+    background-color: #21d4fd;
     color:white;
     float: right;
 
@@ -16,7 +16,29 @@
 display:none;
 }
 
-.new-diagram-icon{
+#plus-icon {
+    background: #21d4fd;
+    height: 30px;
+    position: relative;
+    width: 5px;
+    left: 79px;
+    top: 27px;
+    border-radius: 10px;
+    
+
+  }
+#plus-icon:after {
+    background: #21d4fd;
+    content: "";
+    height: 5px;
+    left: -12px;
+    position: absolute;
+    top: 12px;
+    width: 30px;
+    border-radius: 10px;
+
+  }
+  .new-diagram-icon{
     float: left;    
     white-space: nowrap;
     height: 170px;
@@ -28,18 +50,19 @@ display:none;
     padding:10px 10px 5px 10px;
     margin: 50px 10px 100px 50px;
     font-weight: bold; 
-    color:#2881e3;
+    color:#21d4fd;
     font-size: 20px;
     
     
     }
-
+   
+    
+   
     .new-diagram-icon:hover{
         background-color:#f2f2f2;
         cursor: hand;
     
     }
-
     
     .diagram{
         font-weight: bold;
@@ -61,7 +84,7 @@ display:none;
         .diagram>div{
             box-sizing: border-box;
             position: relative;
-            color:#2881e3;
+            color:#21d4fd;
             font-size: 27px;
             cursor: hand;
         }
@@ -74,30 +97,7 @@ display:none;
       
 
         
- h4.modal-title{
-    text-align: center;
-    font-size: 25px;
-}
 
-div.modal-body>div.form-group>label{
-    font-size:17px;
-}
-
-input.create-modal{
-    float: right;
-    margin:10 5 10 5;
-    background-color: #2881e3;
-    color: white;
-    width: 100px;
-}
-div.form-group{
-    margin: 0 0 40px;
-    
-}
-div.modal-content{
-    color: #2881e3;
-   
-}
 
 
 
@@ -107,7 +107,7 @@ div.modal-content{
     width: 320px;
     height: 400px;
     background: whitesmoke;
-    color: #2881e3;
+    color: #21d4fd;
     top:50%;
     left: 50%;
     position: absolute;
@@ -124,20 +124,20 @@ div.modal-content{
 
 }
 
-h1{
+/* h1{
     position: relative;
     top: -10px;
     text-align: center;
     font-size: 24px;
     padding: 0;
-} 
+}  */
 
 
-button {
+/* button {
     position: fixed;
    top:355px;
    left:250px;
-    background-color:#2881e3;
+    background-color:#21d4fd;
     color: white;
     border: none;
     cursor: hand;
@@ -147,29 +147,30 @@ button {
     border-radius: 20px;
 font-size: 14px;
 z-index: 2;
-}
+} */
 .AddMemModal>.members-input>.email-addMem{
     border: none;
     width: 250px;
     position: relative;
     top:40px;
     float: left;
-    border-bottom: 1px solid #2881e3;
+    border-bottom: 1px solid #21d4fd;
     background:transparent;
     outline: none;
     height: 30px;
     font-size: 16px;
-   color: #2881e3;
+   color: #21d4fd;
    
     
 }
-.members-input{
-    overflow-y:auto;
-    overflow-x:hidden;
-    height: 100px;
-    width: 280px;
-
-
+/* #21d4fd */
+.diagram>h1{
+    box-sizing: border-box;
+    position: relative;
+    color:#21d4fd;
+    font-size: 27px;
+    cursor: hand;
+    top:0.3em;
 }
 #addMemberInput-icon{
     float: right;
@@ -184,17 +185,24 @@ z-index: 2;
 
   
    
- 
-   
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
+.wrap-login100 {
+    height: 400px;}
+    
+    .container-login100-form-btn{
+        position: relative;
+        top:20px;
+    }
+    .login100-form-title{
+        position: relative;
+        font-weight: 10px;
+        top:-30px;
+        color:#21d4fd;
+    }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
+    .btn-primary{
+        background-color:#21d4fd;
+    }
+   
 
 /*end of add member modal*/
 

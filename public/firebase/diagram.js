@@ -46,8 +46,9 @@ $(function()
     var diagramName=$('#InputDiagram').val(); 
     if(diagramName != ""){
     const DiagramKey=CreateDiagram(diagramName);//add on firebase 
-    $('#create-diagram').modal('hide');
-    }else $('#InputDiagram').after("<small style='color:red'>please enter diagram name</small>");
+    $('#id01').css('display','none');
+    }else $(".wrap-login100").before("<small style='color:#c80000; position:relative; top:250px; left:20px ; font-size:11px;'>please enter diagram name</small>");
+
     $('#InputDiagram').val("");
     
  });
@@ -70,7 +71,7 @@ $(function()
  var diagramKey=snap.key;
  var diagramName=snap.val().name;
  if (diagramKey !='name' && diagramKey != 'team'){
- $(".diagrams").last().append("<a href='draw.html?pId="+projectKey+"&dId="+diagramKey+"'><div class='diagram'><div>"+diagramName+"</div></div> </a>");
+ $(".diagrams").last().append("<a href='draw.html?pId="+projectKey+"&dId="+diagramKey+"'><div class='diagram'><h1>"+diagramName+"</h1></div> </a>");
  }
  });
 
@@ -95,7 +96,8 @@ function intToRGB(i){
 
 
  $("#AddMem").on('click',function(){
-        var email=$(".members-input>.email-addMem").val();
+     alert("D");
+        var email=$(".email-addMem").val();
         var color=intToRGB(hashCode(email+""));
     if( email != ""){
         user.once('value',function(snapshot) {
@@ -104,6 +106,7 @@ function intToRGB(i){
             var snapEmail= childSnapshot.val().email;
          
             if(snapEmail == email){
+                alert("1");
                 // projectKey
                 user.child(childKey).child("UserProjects").push(projectKey);
                 project.child(projectKey).child("team").child(childKey).set({
@@ -116,7 +119,8 @@ function intToRGB(i){
         });
            
 
-    }else {$('#email-addMem').after("<small style='color:red'>please enter the email</small>");}
+    }else {$(".wrap-login100").before("<small style='color:#c80000; position:relative; top:250px; left:20px ; font-size:11px;'>please enter the email</small>");
+}
 
 
 
@@ -144,6 +148,20 @@ $('#signoutbtn').on('click',function(){
             });
         });
     });
+
+    /////create project modal
+$("#display-modal").click(function(){
+    $("small").remove();
+    $("#id01").css("display","block");
+
+    
+    
+   
+ });
+ $("#addMember").click(function(){
+    $("small").remove();
+    $("#AddMemModal").css("display","block");
+ });
        
 
 }else {window.location.href='index.html';}
