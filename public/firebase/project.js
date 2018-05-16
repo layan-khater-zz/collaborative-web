@@ -19,7 +19,14 @@ $(function()
       //add project to FIREBASE
 $('.create-project').click(function(e){
     var projectName=$('#InputProject').val();
-  
+    var flag=true;
+    for(var i=0;i<$(".project").length;i++){
+        var name=$(".project:eq("+i+")").text();
+        if(name == projectName ){
+            flag=false;
+        }
+        
+    }
     
     if(projectName != ""){ 
         if(flag){
