@@ -19,8 +19,15 @@ $(function()
       //add project to FIREBASE//
 $('.create-project').click(function(e){
     var projectName=$('#InputProject').val();
-    
-    
+    var flag=true;
+    for(var i=0;i<$(".project").length;i++){
+        var name=$(".project:eq("+i+")").text();
+        if(name == projectName ){
+            flag=false;
+        }
+        
+    }
+    if(flag){
     if(projectName != ""){ 
     CreateProject(projectName);//add to FIREBASE 
     $('#id01').css('display','none');
@@ -30,6 +37,12 @@ $('.create-project').click(function(e){
 
     $(".wrap-login100").before("<small style='color:#c80000; position:relative; top:250px; left:20px ; font-size:11px;'>please enter project name</small>");
     }
+
+}else {
+
+    $(".wrap-login100").before("<small style='color:#c80000; position:relative; top:250px; left:20px ; font-size:11px;'>please enter project name</small>");
+    }
+
 });
 
 
